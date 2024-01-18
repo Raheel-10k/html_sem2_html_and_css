@@ -1,1 +1,1 @@
-This repository consists of all that has been taught during html session conducted in Semester 2 by Sheetal ma'am.
+This repository consists of all that has been taught during html session conducted in Semester 2 by Sheetal ma'am. It consists of tags that were taught and any simultaneous assignments or tasks given to be solved.
