@@ -3,122 +3,166 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>My Portfolio</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: #f4f4f4;
-            }
-
-            header {
-                background-color: #333;
-                color: #fff;
-                text-align: center;
-                padding: 0.05em;
-            }
-
-            section {
-                max-width: 500px;
-                margin: 2em auto;
-                padding: 2em;
-                background-color: #fff;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                border-radius: 8px;
-            }
-
-            h1,
-            h2,
-            h3 {
-                color: #333;
-            }
-
-            a {
-                color: #007bff;
-                text-decoration: none;
-            }
-
-            ul {
-                list-style: none;
-                padding: 0;
-            }
-
-            li {
-                margin-bottom: 0.5em;
-            }
-
-            footer {
-                padding: 1em;
-                background-color: #333;
-                color: #fff;
-                position: fixed;
-                bottom: 0;
-                width: 100%;
-            }
-        </style>
+        <title>Portfolio Page</title>
+        <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
         <header>
-            <h1 style="color: #f4f4f4">Portfolio Page</h1>
+            <img src="images/nameLogo.png" alt="" align="left" />
+            <h1>RK</h1>
+            <!-- <h3>Web Developer</h3> -->
         </header>
 
-        <section>
-            <h2><u>About Me:</u></h2>
-            <p>
-                My name is Raheel Kotwal, currently pursuing B.Tech CSE at ITM
-                Skills University. Have learnt multiple skills recently and
-                discovered my capabilities in different coding languages and
-                communication skills. I have learnt different coding languages
-                recently and was able to also earn 2 certificates on the same.
-            </p>
-            <h3>Skills I know:</h3>
+        <nav>
+            <!-- Add navigation links here -->
+            <ul>
+                <div class="link">
+                    <li><a href="#about">About Me</a></li>
+                </div>
+                <div class="link">
+                    <li><a href="#projects">Projects</a></li>
+                </div>
+                <div class="link">
+                    <li><a href="#contact">Contact</a></li>
+                </div>
+            </ul>
+        </nav>
 
-            <li>Java</li>
-            <li>Python</li>
-            <li>HTML</li>
-            <li>C++</li>
-            <li>C</li>
-            <li>Scratch</li>
-            <p>
-                I have a decent understanding and basic implementation of each
-                of the language mentioned above. And certificates are held in
-                the following:
-                <a
-                    href="https://www.freecodecamp.org/certification/RaheelS/responsive-web-design"
-                    >Responsive Web Design</a
-                >
-                and
-                <a
-                    href="https://www.freecodecamp.org/certification/RaheelS/scientific-computing-with-python-v7"
-                    >Scientific Computing With Python</a
-                >
-            </p>
+        <h1>About Me</h1>
+        <section id="about">
+            <div class="information">
+                <div class="heading">
+                    <h2>Raheel Kotwal</h2>
+                    <h3>1<sup>st</sup> Year B.Tech CSE Student</h3>
+                </div>
+                <div class="education">
+                    <p>
+                        Rassaz International School,10<sup>th</sup> ICSE; Mumbai
+                    </p>
+                    <p>
+                        Rahul International School, 12<sup>th</sup> IGCSE;
+                        Mumbai
+                    </p>
+                    <p>
+                        ITM Skills University (ISU x LU), B.Tech CSE; Kharghar
+                    </p>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Projects</h2>
-            <p>
-                I have built some mini projects in the different programming
-                languages mentioned above.
-            </p>
-            <li></li>
+        <h1>My Tounges</h1>
+        <section id="skills">
+            <div class="container">
+                <div class="image">
+                    <img
+                        src="images/javaLogo.png"
+                        alt="java logo"
+                        width="80px"
+                        height="100px"
+                    />
+                    <p>Java</p>
+                </div>
+                <div class="image">
+                    <img
+                        src="images/pythonLogo.png"
+                        alt="Python logo"
+                        width="80px"
+                        height="100px"
+                    />
+                    <p>Python</p>
+                </div>
+                <div class="image">
+                    <img
+                        src="images/htmllogo.png"
+                        alt="Html logo"
+                        width="80px"
+                        height="100px"
+                    />
+                    <p>HTML5</p>
+                </div>
+                <div class="image">
+                    <img
+                        src="images/cssLogo.png"
+                        alt="Css logo"
+                        width="80px"
+                        height="100px"
+                    />
+                    <p>CSS3</p>
+                </div>
+                <div class="image">
+                    <img
+                        src="images/cppLogo.png"
+                        alt="c++ icon"
+                        width="80px"
+                        height="100px"
+                    />
+                    <p>C++</p>
+                </div>
+                <div class="image"></div>
+            </div>
         </section>
 
-        <!-- <section>
-            <h2>Contact</h2>
-            <p>
-                You can reach me via email at
-                <a href="mailto:2023.raheelk@isu.ac.in">email</a>.
-            </p>
-        </section> -->
+        <h1>Projects</h1>
+        <section id="projects">
+            <!-- Showcase projects with brief descriptions -->
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of Project 1</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of Project 2</p>
+            </div>
+            <div class="project">
+                <h3>Project 3</h3>
+                <p>Description of Project 2.</p>
+            </div>
+            <div class="project">
+                <h3>Project 4</h3>
+                <p>Description of Project 2.</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </section>
+
+        <h1>Contact</h1>
+        <section id="contact"></section>
 
         <footer>
-            Contact me on the following:
-            <a href="https://www.linkedin.com/in/raheel-kotwal-02b594291/"
-                >LinkedIn</a
-            >
-            <a href="https://github.com/Raheel-10k">Github</a>
+            <p>
+                Feel free to reach out! You can contact me at
+                <a href="mailto:2023.raheelk@isu.ac.in"
+                    >2023.raheelk@isu.ac.in</a
+                >
+            </p>
+
+            <div class="links">
+                <div class="link">
+                    <img
+                        src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                        alt="Github logo"
+                        width="20px"
+                        height="20px"
+                        align="left"
+                    />
+                    <p>
+                        <a href="https://github.com/prem-thatikonda29"
+                            >Github</a
+                        >
+                    </p>
+                    <img
+                        src="https://cdn-icons-png.flaticon.com/256/174/174857.png"
+                        alt="LinkedIn logo"
+                        width="20px"
+                        height="20px"
+                        align="left"
+                    />
+                    <p>
+                        <a href="https://www.linkedin.com/in/premthatikonda29/"
+                            >LinkedIn</a
+                        >
+                    </p>
+                </div>
+            </div>
         </footer>
     </body>
 </html>

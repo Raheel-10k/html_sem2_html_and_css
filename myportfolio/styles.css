@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    /*display: flex;*/
+    justify-content: space-evenly;
+    width: 100%;
+    /* margin: 0 10px; */
+    padding: 10px;
+}
+
+header img {
+    width: 120px;
+}
+
+nav {
+    background-color: #000;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    /* text-align: center; */
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#about {
+    /* height: 500px; */
+    width: 80%;
+}
+
+#projects {
+    width: 80%;
+    margin: 50px;
+}
+
+#contact {
+    width: 80%;
+    /* height: 500px; */
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    filter: grayscale();
+    /* width: 180px; */
+    /* height: auto; */
+    /* margin-left: 10px; */
+    /* padding-left: 10px; */
+}
+
+.image img {
+    width: 140px;
+    height: 140px;
+    color: #333;
+    margin-left: 10px;
+}
+
+.image:hover {
+    scale: 1.1;
+    filter: none;
+}
+
+.link {
+    height: 100%;
+    color: white;
+}
+
+.link:hover {
+    /* background-color: rgb(253, 253, 253); */
+    /* color: #000000; */
+    scale: 1.1;
+}
+
+#projects {
+    display: flex;
+    margin: 20px;
+}
+
+.project {
+    font-size: 18px;
+    width: 25%;
+    height: auto;
+    border: 0.5px grey solid;
+    box-shadow: 2px 2px 3px 0 grey;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.project p {
+    border-top: 0.5px dotted grey;
+    padding-top: 15px;
+}
+
+#contact .links {
+    display: flex;
+}
+
+#contact .links .link {
+    margin: 10px;
+    text-align: center;
+}
+
+#contact .links .link img {
+    width: 70px;
+    height: 70px;
+}
