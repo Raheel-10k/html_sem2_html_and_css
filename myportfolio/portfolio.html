@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Portfolio Page</title>
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <header style="background-color: #151515; color: white">
+        <header style="background-color: #151515">
             <img
                 src="images/nameLogo.png"
                 alt=""
@@ -16,11 +15,9 @@
                 height="100"
             />
             <h1>RK</h1>
-            <!-- <h3>Web Developer</h3> -->
         </header>
 
         <nav>
-            <!-- Add navigation links here -->
             <ul>
                 <div class="link">
                     <li><a href="#about">About Me</a></li>
@@ -28,32 +25,53 @@
                 <div class="link">
                     <li><a href="#projects">Projects</a></li>
                 </div>
+                <!-- <div class="link">
+                     <li><a href="#certificates">Certifications</a></li>
+                </div> -->
                 <div class="link">
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#Contact">Contact Me</a></li>
                 </div>
             </ul>
         </nav>
 
         <h1>About Me</h1>
-        <section id="about">
+        <section
+            id="about"
+            style="display: flex; justify-content: space-between"
+        >
             <div class="information">
                 <div class="heading">
-                    <h2>Raheel Kotwal</h2>
-                    <h3>1<sup>st</sup> Year B.Tech CSE Student</h3>
+                    <h2><u>Name:</u> Raheel Kotwal</h2>
+                    <h2>1<sup>st</sup> Year B.Tech CSE Student</h2>
                 </div>
                 <div class="education">
-                    <p>
-                        Rassaz International School,10<sup>th</sup> ICSE; Mumbai
-                    </p>
-                    <p>
-                        Rahul International School, 12<sup>th</sup> IGCSE;
-                        Mumbai
-                    </p>
-                    <p>
-                        ITM Skills University (ISU x LU), B.Tech CSE; Kharghar
-                    </p>
+                    <h2>My Education</h2>
+                    <ul>
+                        <li>Rassaz International School,10<sup>th</sup> ICSE; Mumbai</li>
+                        <li>Rahul International School, 12<sup>th</sup> IGCSE; Mumbai</li>
+                        <li>ITM Skills University (ISU x LU), B.Tech CSE; Kharghar</li>
+                    </ul>
+                </div>
+                <div class="education">
+                    <h2>My Experience</h2>
+                    <ul>
+                        <li>Marketing Intern at LetsUpgrade, from Dec 2023 - Present</li>
+                    </ul>
+                    <h2>Interests: </h2>
+                    <ul>
+                        <li>UI desiging</li>
+                        <li>Learning new programming languages</li>
+                        <li>Active Digital Marketing skills and tools</li>
                 </div>
             </div>
+            <!-- Add the image below -->
+            <img
+                src="images/mypic1-modified-removebg-preview.png"
+                alt="Raheel's picture"
+                width="300"
+                height="300"
+                align="right"
+            />
         </section>
 
         <h1>My Tounges</h1>
@@ -61,7 +79,7 @@
             <div class="container">
                 <div class="image">
                     <img
-                        src="images/javaLogo.png"
+                        src="images/whitejava.jpeg"
                         alt="java logo"
                         width="80px"
                         height="100px"
@@ -70,7 +88,7 @@
                 </div>
                 <div class="image">
                     <img
-                        src="images/pythonLogo.png"
+                        src="images/whitepython.png"
                         alt="Python logo"
                         width="80px"
                         height="100px"
@@ -79,7 +97,7 @@
                 </div>
                 <div class="image">
                     <img
-                        src="images/htmllogo.png"
+                        src="images/html5Logo1.png"
                         alt="Html logo"
                         width="80px"
                         height="100px"
@@ -88,7 +106,7 @@
                 </div>
                 <div class="image">
                     <img
-                        src="images/cssLogo.png"
+                        src="images/cssCheckLogo.jpeg"
                         alt="Css logo"
                         width="80px"
                         height="100px"
@@ -97,7 +115,7 @@
                 </div>
                 <div class="image">
                     <img
-                        src="images/cppLogo.png"
+                        src="images/CPP2logo.png"
                         alt="c++ icon"
                         width="80px"
                         height="100px"
@@ -130,12 +148,26 @@
             <!-- Add more projects as needed -->
         </section>
 
-        <h1>Contact</h1>
-        <section id="contact"></section>
+        <h1>My Certifications</h1>
+        <section id="certification">
+            <div class="certifications">
+                <h2>Below are my certifications:</h2>
+                <ul>
+                    <li><a href="https://www.freecodecamp.org/certification/RaheelS/responsive-web-design">Responsive Web Design</a></li>
+                    <li><a href="https://www.freecodecamp.org/certification/RaheelS/scientific-computing-with-python-v7">Scientific Computing with Python</a></li>
+                </ul>
+            </div>
+        </section>
+
+
+
+        
 
         <footer>
+            <h1>Contact Me</h1>
+            <section id="Contact"></section>
             <p>
-                Feel free to reach out! You can contact me at
+                Feel free to reach out!<br> You can contact me at
                 <a href="mailto:2023.raheelk@isu.ac.in"
                     >2023.raheelk@isu.ac.in</a
                 >
@@ -144,26 +176,26 @@
             <div class="links">
                 <div class="link">
                     <img
-                        src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                        src="images/whiteGithubLogo.png"
                         alt="Github logo"
-                        width="20px"
+                        width="30px"
                         height="20px"
                         align="left"
                     />
                     <p>
-                        <a href="https://github.com/prem-thatikonda29"
+                        <a href="https://github.com/Raheel-10k"
                             >Github</a
                         >
                     </p>
                     <img
-                        src="https://cdn-icons-png.flaticon.com/256/174/174857.png"
+                        src="images/whitelinkedInLogo.png"
                         alt="LinkedIn logo"
                         width="20px"
                         height="20px"
                         align="left"
                     />
                     <p>
-                        <a href="https://www.linkedin.com/in/premthatikonda29/"
+                        <a href="https://www.linkedin.com/in/raheel-kotwal-02b594291/"
                             >LinkedIn</a
                         >
                     </p>
