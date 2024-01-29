@@ -4,17 +4,21 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #000;
+    color: beige;
 }
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    color: #c83748;
+    width: 98.4%;
     margin: 0 10px;
     padding: 10px;
 }
@@ -29,7 +33,6 @@ nav {
     padding: 15px;
     width: 100%;
     box-sizing: border-box;
-    /* text-align: center; */
     font-size: 1.5rem;
 }
 
@@ -52,7 +55,6 @@ nav a {
 }
 
 #about {
-    /* height: 500px; */
     width: 80%;
 }
 
@@ -63,7 +65,6 @@ nav a {
 
 #contact {
     width: 80%;
-    /* height: 500px; */
 }
 
 #skills {
@@ -82,10 +83,6 @@ nav a {
     align-items: center;
     justify-self: center;
     filter: grayscale();
-    /* width: 180px; */
-    /* height: auto; */
-    /* margin-left: 10px; */
-    /* padding-left: 10px; */
 }
 
 .image img {
@@ -102,12 +99,11 @@ nav a {
 
 .link {
     height: 100%;
-    color: white;
+    color: #000000;
 }
 
-.link:hover {
-    /* background-color: rgb(253, 253, 253); */
-    /* color: #000000; */
+.link:hover li a {
+    color: #c83748;
     scale: 1.1;
 }
 
@@ -135,6 +131,10 @@ nav a {
     padding-top: 15px;
 }
 
+#certification {
+    width: 80%;
+}
+
 #contact .links {
     display: flex;
 }
@@ -147,4 +147,14 @@ nav a {
 #contact .links .link img {
     width: 70px;
     height: 70px;
+}
+
+footer {
+    align-self: flex-start;
+    background: #151515;
+    width: 99.4%;
+}
+
+footer h1 {
+    text-align: center;
 }
