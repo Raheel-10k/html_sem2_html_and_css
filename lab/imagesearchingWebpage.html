@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Img Search</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+            }
+
+            #search-input {
+                width: 300px;
+                padding: 8px;
+                margin-right: 10px;
+            }
+
+            #search-button {
+                padding: 10px;
+                cursor: pointer;
+            }
+
+            #image-container {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 20px;
+            }
+
+            .image-card {
+                margin: 10px;
+            }
+
+            .image-card img {
+                width: 200px;
+                height: 150px;
+                object-fit: cover;
+                border-radius: 8px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Img Search</h1>
+
+        <div>
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Search for images..."
+                onkeydown="handleEnterKey(event)"
+            />
+            <button id="search-button" onclick="searchImages()">Search</button>
+        </div>
+
+        <div id="image-container"></div>
+
+        <script>
+            const imageData = [
+                {
+                    //Sunset
+                    id: 1,
+                    src: "https://img.freepik.com/free-photo/water-blue-sunset-filter-beauty_1203-4457.jpg?size=626&ext=jpg&ga=GA1.1.842036517.1695668928&semt=sph",
+                },
+                {
+                    id: 2,
+                    src: "https://img.freepik.com/free-photo/red-sunset-clouds-trees_1204-352.jpg?size=626&ext=jpg&ga=GA1.1.842036517.1695668928&semt=sph",
+                },
+                {
+                    id: 3,
+                    src: "https://img.freepik.com/free-photo/3d-render-tree-against-sunset-sky_1048-4191.jpg?size=626&ext=jpg&ga=GA1.1.842036517.1695668928&semt=sph",
+                }, //Sunset End
+                {
+                    //birds
+                    id: 4,
+                    src: "https://img.freepik.com/free-photo/view-flock-birds-flying-into-beautiful-sky-during-sunset_181624-35074.jpg?size=626&ext=jpg&ga=GA1.1.842036517.1695668928&semt=sph",
+                },
+                {
+                    id: 5,
+                    src: "https://img.freepik.com/free-photo/colorful-bird-sits-branch-forest_188544-8871.jpg?size=626&ext=jpg&ga=GA1.1.842036517.1695668928&semt=sph",
+                },
+                {
+                    id: 6,
+                    src: "https://img.freepik.com/free-photo/selective-focus-shot-hummingbird-flight_181624-56855.jpg?size=626&ext=jpg&ga=GA1.1.842036517.1695668928&semt=sph",
+                }, //birds end
+                {
+                    //flowers
+                    id: 7,
+                    src: "https://img.freepik.com/free-photo/close-up-flowering-plant-with-blurred-background_1156-24.jpg?size=626&ext=jpg&ga=GA1.1.842036517.1695668928&semt=ais",
+                },
+                {
+                    id: 8,
+                    src: "https://img.freepik.com/free-photo/close-up-vibrant-yellow-flowers-summer-field_181624-37969.jpg?size=626&ext=jpg&ga=GA1.1.842036517.1695668928&semt=ais",
+                },
+                {
+                    id: 9,
+                    src: "https://img.freepik.com/free-photo/closeup-view-purple-flower-with-bee-it-meadow_181624-6390.jpg?size=626&ext=jpg&ga=GA1.1.842036517.1695668928&semt=ais",
+                }, //flowers end
+                {
+                    //corals
+                    id: 10,
+                    src: "https://img.freepik.com/free-photo/bleached-coral-showing-environmental-crisis-eco-system-failure_23-2151038117.jpg?size=626&ext=jpg&ga=GA1.1.842036517.1695668928&semt=ais",
+                },
+                {
+                    id: 11,
+                    src: "https://img.freepik.com/free-photo/corals-sponges-around-thriving-tropical-coral-reef_1360-117.jpg?size=626&ext=jpg&ga=GA1.1.842036517.1695668928&semt=ais",
+                },
+                {
+                    id: 12,
+                    src: "https://img.freepik.com/free-photo/coral-reef_658691-326.jpg?size=626&ext=jpg&ga=GA1.1.842036517.1695668928&semt=ais",
+                }, //corals end
+                {
+                    //jellyfish
+                    id: 13,
+                    src: "https://img.freepik.com/free-photo/jellyfish-water-tank_1150-12620.jpg?size=626&ext=jpg&ga=GA1.1.842036517.1695668928&semt=ais",
+                },
+                {
+                    id: 14,
+                    src: "https://img.freepik.com/free-photo/closeup-shot-south-american-nettle-swimming-deep-water_181624-10853.jpg?size=626&ext=jpg&ga=GA1.1.842036517.1695668928&semt=ais",
+                },
+                {
+                    id: 15,
+                    src: "https://img.freepik.com/free-photo/vertical-shot-south-american-nettle-swimming-deep-water_181624-13516.jpg?size=626&ext=jpg&ga=GA1.1.842036517.1695668928&semt=ais",
+                }, //jellyfish end
+                {
+                    //night sky
+                    id: 16,
+                    src: "https://img.freepik.com/free-photo/silhouette-photography-trees-blue-sky-during-golden-hour_395237-143.jpg?size=626&ext=jpg&ga=GA1.1.842036517.1695668928&semt=ais",
+                },
+                {
+                    id: 17,
+                    src: "https://img.freepik.com/free-photo/beautiful-cloudscape-sunset-evening-dawn_53876-14284.jpg?size=626&ext=jpg&ga=GA1.1.842036517.1695668928&semt=ais",
+                },
+                {
+                    id: 18,
+                    src: "https://img.freepik.com/free-photo/silhouettes-hills-street-lamps-cloudy-sky-during-beautiful-sunset_181624-28611.jpg?size=626&ext=jpg&ga=GA1.1.842036517.1695668928&semt=ais",
+                }, //night sky end
+                {
+                    //moon
+                    id: 19,
+                    src: "https://img.freepik.com/free-photo/purple-landscape_1048-4769.jpg?size=626&ext=jpg&ga=GA1.1.842036517.1695668928&semt=ais",
+                },
+                {
+                    id: 20,
+                    src: "https://img.freepik.com/free-photo/3d-landscape-with-tree-against-moonlit-sky_1048-12527.jpg?size=626&ext=jpg&ga=GA1.1.842036517.1695668928&semt=ais",
+                },
+                {
+                    id: 21,
+                    src: "https://img.freepik.com/free-photo/beautiful-moon-dark-sky_198169-261.jpg?size=626&ext=jpg&ga=GA1.1.842036517.1695668928&semt=ais",
+                }, //moon end
+
+                // Add more image data
+            ];
+
+            function searchImages() {
+                const searchTerm = document
+                    .getElementById("search-input")
+                    .value.toLowerCase();
+                const filteredImages = imageData.filter((image) =>
+                    image.src.toLowerCase().includes(searchTerm)
+                );
+
+                displayImages(filteredImages);
+            }
+
+            function displayImages(images) {
+                const imageContainer =
+                    document.getElementById("image-container");
+                imageContainer.innerHTML = "";
+
+                images.forEach((image) => {
+                    const imageCard = document.createElement("div");
+                    imageCard.className = "image-card";
+
+                    const imgElement = document.createElement("img");
+                    imgElement.src = image.src;
+                    imgElement.alt = `Image ${image.id}`;
+
+                    imageCard.appendChild(imgElement);
+                    imageContainer.appendChild(imageCard);
+                });
+            }
+            //the html code below explains the exact functionality of the js code above:
+
+            // Images are dynamically added here html code below:
+            // <div class="image-card">
+            //     <img
+            //          src="https://img.freepik.com/free-photo/water-blue-sunset-filter-beauty_1203-4457.jpg?size=626&ext=jpg&ga=GA1.1.842036517.1695668928&semt=sph"
+            //          alt="Image 1">
+            // </div>
+            // <div class="image-card">
+            //     <img
+            //          src="https://img.freepik.com/free-photo/red-sunset-clouds-trees_1204-352.jpg?size=626&ext=jpg&ga=GA1.1.842036517.1695668928&semt=sph"
+            //          alt="Image 2">
+            // </div>
+            // <div class="image-card">
+            //     <img src="path/to/image3.jpg" alt="Image 3">
+            // </div>
+            // And so on....
+
+            displayImages(imageData);
+        </script>
+    </body>
+</html>
