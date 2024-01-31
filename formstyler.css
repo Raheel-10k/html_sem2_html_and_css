@@ -1,5 +1,5 @@
 body {
-    background-color: #212121;
+    background-color: #000;
 
     text-align: center;
 }
@@ -48,11 +48,23 @@ button and Checkbox */
 
 /* Styling Button */
 button {
-    background-color: #000;
+    background-color: #212121;
     border: 1px solid #777;
     border-radius: 2px;
     font-family: inherit;
     font-size: 21px;
+    color: #fff;
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #000;
+    font-family: inherit;
+    font-size: 21px;
+    color: #af1313;
     display: block;
     width: 100%;
     margin-top: 50px;
