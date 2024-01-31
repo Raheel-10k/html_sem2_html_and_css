@@ -164,21 +164,28 @@
             }
 
             function displayImages(images) {
-                const imageContainer =
-                    document.getElementById("image-container");
-                imageContainer.innerHTML = "";
+                let imagesDom = "";
 
                 images.forEach((image) => {
-                    const imageCard = document.createElement("div");
-                    imageCard.className = "image-card";
+                    //const imageCard = document.createElement("div");
+                    //imageCard.className = "image-card";
 
-                    const imgElement = document.createElement("img");
-                    imgElement.src = image.src;
-                    imgElement.alt = `Image ${image.id}`;
+                    //const imgElement = document.createElement("img");
+                    //imgElement.src = image.src;
+                    //imgElement.alt = `Image ${image.id}`;
 
-                    imageCard.appendChild(imgElement);
-                    imageContainer.appendChild(imageCard);
+                    //imageCard.appendChild(imgElement);
+                    //imageContainer.appendChild(imageCard);
+
+                    imagesDom += `
+                    <div class='image-card'>
+                        <img src='${image.src}' alt='img ${image.id}' />
+                    </div>
+                    `;
                 });
+
+                document.getElementById("image-container").innerHTML =
+                    imagesDom;
             }
             //the html code below explains the exact functionality of the js code above:
 
