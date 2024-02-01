@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            table {
+                border: 2px solid grey;
+                border-collapse: collapse;
+            }
+
+            th {
+                border: 1px solid grey;
+                background-color: rgb(199, 199, 199);
+            }
+
+            tr,
+            td {
+                padding: 5px;
+                border: 1px solid grey;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th>Bob</th>
+                    <th>Alice</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td
+                        rowspan="2"
+                        style="background-color: rgb(199, 199, 199)"
+                    >
+                        Favourite
+                    </td>
+                    <td style="background-color: rgb(199, 199, 199)">Color</td>
+                    <td>Blue</td>
+                    <td>Purple</td>
+                </tr>
+                <tr>
+                    <td style="background-color: rgb(199, 199, 199)">
+                        Flavour
+                    </td>
+                    <td>Banana</td>
+                    <td>Chocolate</td>
+                </tr>
+                <tr>
+                    <td
+                        rowspan="2"
+                        style="background-color: rgb(199, 199, 199)"
+                    >
+                        Least Favourite
+                    </td>
+                    <td style="background-color: rgb(199, 199, 199)">Color</td>
+                    <td>Yellow</td>
+                    <td>Pink</td>
+                </tr>
+                <tr>
+                    <td style="background-color: rgb(199, 199, 199)">
+                        Flavour
+                    </td>
+                    <td>Mint</td>
+                    <td>Walnut</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
