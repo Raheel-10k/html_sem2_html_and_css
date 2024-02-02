@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            table {
+                border: 2px solid grey;
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                border: 1px solid grey;
+                padding: 8px;
+            }
+
+            th {
+                background-color: rgb(199, 199, 199);
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption align="center">
+                Invoice
+            </caption>
+            <thead>
+                <tr>
+                    <th>Item / Desc.</th>
+                    <th>Qty.</th>
+                    <th>@</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Paperclips</td>
+                    <td>100</td>
+                    <td>1.15</td>
+                    <td>115.00</td>
+                </tr>
+                <tr>
+                    <td>Paper (Case)</td>
+                    <td>10</td>
+                    <td>45.99</td>
+                    <td>459.90</td>
+                </tr>
+                <tr>
+                    <td>Wastepaper Baskets</td>
+                    <td>2</td>
+                    <td>17.99</td>
+                    <td>35.98</td>
+                </tr>
+                <tr>
+                    <td
+                        colspan="3"
+                        style="background-color: rgb(199, 199, 199)"
+                    >
+                        <b>Subtotal</b>
+                    </td>
+                    <td>610.88</td>
+                </tr>
+                <tr>
+                    <td
+                        colspan="2"
+                        style="background-color: rgb(199, 199, 199)"
+                    >
+                        <b>Tax: </b>
+                    </td>
+                    <td>7%</td>
+                    <td>42.76</td>
+                </tr>
+                <tr>
+                    <td
+                        colspan="3"
+                        style="background-color: rgb(199, 199, 199)"
+                    >
+                        <b>Total</b>
+                    </td>
+                    <td>653.64</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

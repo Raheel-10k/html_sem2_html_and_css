@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login Page</title>
+        <style>
+            body {
+                background-color: yellow;
+            }
+
+            table {
+                width: 20%;
+                margin: auto;
+                border-width: 20px;
+                border: 20px solid #333;
+                border-left-color: grey;
+                border-top-color: grey;
+                border-right-color: black;
+                border-bottom-color: black;
+                text-align: left;
+            }
+
+            th,
+            td,
+            tr {
+                padding: 8px;
+                border: 2px solid #333;
+            }
+            td {
+                border: 1px solid black;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            .center {
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>LOGIN PAGE</h1>
+        <table>
+            <tr>
+                <td>Username:</td>
+                <td>
+                    <input type="text" id="username" name="username" required />
+                </td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        required
+                    />
+                </td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><input type="text" id="address" name="address" /></td>
+            </tr>
+            <tr>
+                <td>Languages known:</td>
+                <td>
+                    <input
+                        type="checkbox"
+                        id="english"
+                        name="language"
+                        value="english"
+                    />
+                    <label for="english">English</label>
+                    <input
+                        type="checkbox"
+                        id="hindi"
+                        name="language"
+                        value="hindi"
+                    />
+                    <label for="hindi">Hindi</label>
+                    <input
+                        type="checkbox"
+                        id="telugu"
+                        name="language"
+                        value="telugu"
+                    />
+                    <label for="telugu">Telugu</label>
+                    <input
+                        type="checkbox"
+                        id="tamil"
+                        name="language"
+                        value="tamil"
+                    />
+                    <label for="tamil">Tamil</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male" />
+                    <label for="male">Male</label>
+                    <input
+                        type="radio"
+                        id="female"
+                        name="gender"
+                        value="female"
+                    />
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="center">
+                    <input type="submit" value="Submit" />
+                </td>
+                <td class="center">
+                    <input type="reset" value="Clear" />
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
