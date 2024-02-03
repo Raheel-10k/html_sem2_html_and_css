@@ -91,8 +91,15 @@ h3 {
 }
 
 #skills {
+    /* width: 50%;
+    height: 30%; */
+    background-image: url("images/skillsPageBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    padding: 200px;
+    border-radius: 8px;
 }
 
 .myImg {
@@ -181,10 +188,11 @@ h3 {
 
 footer {
     align-self: flex-start;
-    background: #151515;
+    background: #2d2c2c;
     width: 99.4%;
 }
 
 footer h1 {
     text-align: center;
+    color: #bd3141;
 }

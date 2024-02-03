@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(-0.38turn, #e0cdff, #b89fdf);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100dvh;
+}
+
+/* Styling the Form (Color, Padding, Shadow) */
+
+.main {
+    display: flex;
+    justify-content: center;
+    height: 58%;
+    /* flex-direction: row-reverse; */
+}
+
+.img-container {
+    height: 100%;
+    overflow: hidden;
+    opacity: 0.85;
+}
+
+.img {
+    height: 100%;
+}
+
+form {
+    background-color: #ffffff;
+    opacity: 1;
+    min-width: 600px;
+    height: 100%;
+    padding: 30px 20px;
+}
+
+form h2 {
+    text-decoration: underline;
+    text-align: left;
+    color: #8353c2;
+}
+
+form p {
+    font-size: 14px;
+}
+
+/* Styling Label */
+label {
+    font-size: 20px;
+    text-align: left;
+
+    color: #dadae2;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Styling form-control input,
+select, textarea */
+input,
+select,
+textarea {
+    border: 1px solid #e7e7e7;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 10px;
+    display: block;
+    width: 95%;
+}
+
+input {
+    background-color: #ffffff;
+}
+input::placeholder {
+    color: #cdcbcb;
+}
+
+input:focus {
+    color: #000;
+}
+
+/* Styling Button */
+button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #8053c9;
+    border: 1px solid #000;
+    border-radius: 20px;
+    text-align: center;
+    font-family: inherit;
+    font-size: 21px;
+    color: #fff;
+    display: block;
+    width: 25%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #7448ba;
+    text-align: center;
+    font-family: inherit;
+    font-size: 21px;
+    color: #fff;
+    display: block;
+    width: 25%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
