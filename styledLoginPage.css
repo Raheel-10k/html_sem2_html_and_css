@@ -12,13 +12,10 @@ body {
     min-height: 100dvh;
 }
 
-/* Styling the Form (Color, Padding, Shadow) */
-
 .main {
     display: flex;
     justify-content: center;
     height: 60%;
-    /* flex-direction: row-reverse; */
 }
 
 .img-container {
