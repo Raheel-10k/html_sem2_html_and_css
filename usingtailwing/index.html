@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form Page</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body class="body">
+        <div class="main">
+            <form id="registrationForm" class="form">
+                <h2>Sign-in Form</h2>
+
+                <label for="name">Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="FirstName LastName"
+                    required
+                    class="input"
+                />
+
+                <label for="username">Username:</label>
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Username"
+                    required
+                    class="input"
+                />
+
+                <label for="password">Password:</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Password"
+                    required
+                    class="input"
+                />
+
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="example@gmail.com"
+                    required
+                    class="input"
+                />
+
+                <p id="emailError" class="error text-sm"></p>
+
+                <button type="submit" class="button">Register</button>
+
+                <p>
+                    Have an account?
+                    <span class="login-link">
+                        <a
+                            href="basicUsernameAndPasswordForm.html"
+                            target="_blank"
+                            >Login in</a
+                        >
+                    </span>
+                </p>
+            </form>
+        </div>
+    </body>
+</html>
