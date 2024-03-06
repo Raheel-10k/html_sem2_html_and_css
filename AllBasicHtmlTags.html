@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML Tags Demo</title>
+    </head>
+    <body>
+        <!-- 1) Heading Tags -->
+        <h1>This is an H1 Heading</h1>
+        <h2>This is an H2 Heading</h2>
+        <h3>This is an H3 Heading</h3>
+        <h4>This is an H4 Heading</h4>
+        <h5>This is an H5 Heading</h5>
+        <h6>This is an H6 Heading</h6>
+
+        <!-- 2) Table Tags with Thead, Tbody, Tr, Th, and Td -->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Row 1, Cell 1</td>
+                    <td>Row 1, Cell 2</td>
+                </tr>
+                <tr>
+                    <td>Row 2, Cell 1</td>
+                    <td>Row 2, Cell 2</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- 3) Paragraph Tag -->
+        <p>This is a paragraph tag.</p>
+
+        <!-- 4) Text Formatting Tags -->
+        <b>Bold text</b><br />
+        <strong>Important text</strong><br />
+        <i>Italic text</i><br />
+        <em>Emphasized text</em><br />
+        <mark>Marked text</mark><br />
+        <small>Small text</small><br />
+        <del>Deleted text</del><br />
+        <ins>Inserted text</ins><br />
+        <sub>Subscript text</sub><br />
+        <sup>Superscript text</sup><br />
+        <s>Strikethrough text</s><br />
+
+        <!-- 5) Image Tag -->
+        <img src="https://via.placeholder.com/150" alt="Placeholder Image" />
+
+        <!-- 6) Audio and Video Tags -->
+        <audio controls>
+            <source src="audio.mp3" type="audio/mp3" />
+            Your browser does not support the audio tag.
+        </audio>
+
+        <video width="320" height="240" controls>
+            <source src="video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- 7) List Tags -->
+        <ul>
+            <li>Unordered List Item 1</li>
+            <li>Unordered List Item 2</li>
+            <li>Unordered List Item 3</li>
+        </ul>
+
+        <!-- Unordered List with Different Styles -->
+        <ul style="list-style-type: circle">
+            <li>Circle Bulleted Item 1</li>
+            <li>Circle Bulleted Item 2</li>
+            <li>Circle Bulleted Item 3</li>
+        </ul>
+
+        <ul style="list-style-type: square">
+            <li>Square Bulleted Item 1</li>
+            <li>Square Bulleted Item 2</li>
+            <li>Square Bulleted Item 3</li>
+        </ul>
+
+        <ul style="list-style-type: none">
+            <li>No Bullets Item 1</li>
+            <li>No Bullets Item 2</li>
+            <li>No Bullets Item 3</li>
+        </ul>
+
+        <!-- Ordered List with Different Types -->
+        <ol type="1">
+            <li>Numbered List Item 1</li>
+            <li>Numbered List Item 2</li>
+            <li>Numbered List Item 3</li>
+        </ol>
+
+        <ol type="A">
+            <li>Uppercase Alphabetical Item 1</li>
+            <li>Uppercase Alphabetical Item 2</li>
+            <li>Uppercase Alphabetical Item 3</li>
+        </ol>
+
+        <ol type="a">
+            <li>Lowercase Alphabetical Item 1</li>
+            <li>Lowercase Alphabetical Item 2</li>
+            <li>Lowercase Alphabetical Item 3</li>
+        </ol>
+
+        <ol type="I">
+            <li>Uppercase Roman Numeral Item 1</li>
+            <li>Uppercase Roman Numeral Item 2</li>
+            <li>Uppercase Roman Numeral Item 3</li>
+        </ol>
+
+        <ol type="i">
+            <li>Lowercase Roman Numeral Item 1</li>
+            <li>Lowercase Roman Numeral Item 2</li>
+            <li>Lowercase Roman Numeral Item 3</li>
+        </ol>
+
+        <!-- 8) Anchor Tag -->
+        <a href="https://www.example.com" target="_blank">Visit Example.com</a>
+        <br />
+
+        <!-- 9) Text Alignment Tags -->
+        <left>Left-aligned text.</left>
+        <!-- this wont work -->
+        <center>Center-aligned text.</center>
+        <!-- this works but has been deprecated as css became more prominent -->
+        <right>Right-aligned text.</right>
+        <!-- this wont work -->
+
+        <!-- 10) Definition List Tags -->
+        <dl>
+            <dt>Definition Term 1</dt>
+            <dd>Definition Description 1</dd>
+            <dt>Definition Term 2</dt>
+            <dd>Definition Description 2</dd>
+            <dt>Definition Term 3</dt>
+            <dd>Definition Description 3</dd>
+        </dl>
+
+        <!-- 11) Horizontal Rule -->
+        <hr />
+
+        <!-- 12) Form -->
+        <form action="#" method="post">
+            <label for="text-input">Text Input:</label>
+            <input
+                type="text"
+                id="text-input"
+                name="text-input"
+                required
+            /><br />
+
+            <label>Radio Buttons:</label><br />
+            <input
+                type="radio"
+                id="radio1"
+                name="radio-group"
+                value="option1"
+                checked
+            />
+            <label for="radio1">Option 1</label>
+            <input
+                type="radio"
+                id="radio2"
+                name="radio-group"
+                value="option2"
+            />
+            <label for="radio2">Option 2</label><br />
+
+            <label>Checkboxes:</label><br />
+            <input
+                type="checkbox"
+                id="checkbox1"
+                name="checkbox1"
+                value="check1"
+            />
+            <label for="checkbox1">Check 1</label>
+            <input
+                type="checkbox"
+                id="checkbox2"
+                name="checkbox2"
+                value="check2"
+            />
+            <label for="checkbox2">Check 2</label><br />
+
+            <label for="dropdown">Dropdown:</label>
+            <select id="dropdown" name="dropdown">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option></select
+            ><br />
+
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
